@@ -21,6 +21,13 @@ a{
 a:link { color: var(--text-color1); }
 a:visited { color: var(--text-color3); }
 
+/*a{*/
+/*    color: var(--text-color1);*/
+/*}*/
+/*a:active, a:visited {*/
+/*    color: var(--text-color3);*/
+/*}*/
+
 .link-no-underline {
     text-decoration: none;
 }
@@ -215,11 +222,9 @@ ul {
     max-width: min-content;
     height: 40rem;
     margin-left: 2rem;
-    /*margin-top: 4rem;*/
+    margin-top: 4rem;
 }
-.industry_card:nth-child(3n+1) { 
-    margin: 0;
-}
+
 
 .industry_card>h3 { 
     font-size: 2.8rem;
@@ -289,13 +294,15 @@ ul {
 }
 
 .partners_text>p{
+    margin-top: 2rem;
     font-size: 2.2rem;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
+    line-height: 3rem;
 }
 
 .partners_text{
-    max-width: 86.4rem;
+    max-width: 110.6rem;
     padding-top: 15rem;
     padding-left: 30.2rem;
 }
@@ -307,6 +314,7 @@ ul {
     flex-wrap: wrap;
     align-items: center;
     padding-bottom: 15rem;
+    justify-content: space-between;
 }
 
 /* Forms */
@@ -370,36 +378,45 @@ ul {
     font-weight: 500;
 }
 
-.form>form>div>input,
-.form>form>div>textarea {
-    max-width: 60rem;
-    width: 100%;
-    padding: 1.4rem 1.5rem;
-}
+
 
 #comment {
     height: 13rem;
+    padding: 1.4rem 1.5rem;
+    margin-top: 2.5rem;
+    width: 51.8rem;
+    margin-bottom: 2.5rem;
 }
 
-.form>form>div {
+.form_item>input{
+    width: 51.8rem;
+    padding: 1.4rem 1.5rem;
     margin-top: 2.5rem;
-    font-size: 1.5rem;
+}
+
+.form_item{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    max-width: 60rem;
+
 }
 
 .user_agreement {
     display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: flex-start;
+    align-items: start;
     color: var(--text-color5);
     text-wrap: none;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
+    margin-bottom: 4rem;
 
 }
 .user_agreement>input{
-    width: 10%;
+    width: 1.5rem;
+    margin-right: 1rem;
+
 }
 
 .submit-btn{
@@ -414,11 +431,7 @@ ul {
     font-size: 2rem;
 }
 
-.form_item{
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 1.6rem;
-}
+
 
 /* FOOTER */
 footer{
@@ -549,7 +562,7 @@ footer{
     background-image: url("../img/footer/location icon.png  ");
     padding-left: 3rem;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: left top;
 }
 
 .footer2{
@@ -567,4 +580,8 @@ footer{
 .last_footer{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+}
+
+.combo3-1_item>a{
+    color: var(--text-color2);
 }
