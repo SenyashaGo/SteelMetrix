@@ -164,6 +164,9 @@ ul {
 }
 
 .industry_filter_all-btn{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #1A1A1A;
     width: max-content;
     background-color: transparent;
     margin-top: 4rem;
@@ -240,6 +243,9 @@ ul {
     background-position: right;
     background-size: 2.5rem 1.2rem;
     font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #1A1A1A;
 }
 
 /* Tagline */
@@ -249,11 +255,14 @@ ul {
     align-items: center;
     background-color: #F0F0F0;
     justify-content: center;
-    height: 344px;
+    height: 34.4rem;
 }
 
 .tagline_text{
     color: #EB6329;
+    font-size: 3.4rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
 }
 
 /* Partners */
@@ -264,21 +273,30 @@ ul {
 
 .partners_tagline{
     color: #EB6329;
+    font-size: 3.4rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.partners_text>p{
+    font-size: 2.2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
 }
 
 .partners_text{
-    width: 864px;
-    padding-top: 150px;
-    padding-left: 302px;
+    max-width: 86.4rem;
+    padding-top: 15rem;
+    padding-left: 30.2rem;
 }
 
 .partners_cards{
-    padding-top: 40px;
+    padding-top: 4rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    padding-bottom: 150px;
+    padding-bottom: 15rem;
 }
 
 /* Forms */
@@ -302,18 +320,31 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: start;
-    height: 1139px;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    height: 113.9rem;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
 }
 
 .form_text{
-    max-width: 638px;
+    max-width: 63.8rem;
+}
 
+.form_text>h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 3.4rem;
 }
 
 .form_text>p{
-    margin-top: 10px;
+    margin-top: 2rem;
+    font-size: 2.2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.form_text>a{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
 }
 
 .form>form {
@@ -321,26 +352,28 @@ ul {
     background-color: white;
     display: flex;
     flex-direction: column;
-    height: 839px;
-    width: 638px;
-    padding: 15px 60px;
-    margin-left: 40px;
+    height: 83.9rem;
+    width: 63.8rem;
+    padding: 1.5rem 6rem;
+    margin-left: 4rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
 }
 
 .form>form>div>input,
 .form>form>div>textarea {
-    max-width: 600px;
+    max-width: 60rem;
     width: 100%;
-    padding: 14px 15px;
+    padding: 1.4rem 1.5rem;
 }
 
 #comment {
-    height: 130px;
+    height: 13rem;
 }
 
 .form>form>div {
-    margin-top: 25px;
-    font-size: 15px;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .user_agreement {
@@ -358,7 +391,9 @@ ul {
 
 .submit-btn{
 
-    padding: 18px 28px;
-    gap: 10px;
-    max-width: 256px;
+    padding: 1.8rem 2.8rem;
+    gap: 1rem;
+    max-width: 25.6rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
 }
