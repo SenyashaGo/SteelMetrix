@@ -122,6 +122,12 @@ ul {
     text-transform: uppercase;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
+    line-height: 5.2rem;
+    background: linear-gradient(to right, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-fill-color: transparent;
+
 }
 
 
@@ -298,7 +304,7 @@ ul {
     font-size: 2.2rem;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    line-height: 3rem;
+    line-height: 2.86rem;
 }
 
 .partners_text{
@@ -358,6 +364,7 @@ ul {
     font-size: 2.2rem;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
+    line-height: 2.86rem;
 }
 
 .form_text>a{
@@ -429,6 +436,8 @@ ul {
     color: var(--text-color1);
     border: none;
     font-size: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* горизонтальное смещение, вертикальное смещение, радиус размытия и цвет тени */
+
 }
 
 
@@ -551,6 +560,7 @@ footer{
     margin-top: 2rem;
 }
 
+
 .combo3-2_item:first-child{
     background-image: url("../img/footer/mail icon.png");
     padding-left: 3rem;
@@ -563,6 +573,7 @@ footer{
     padding-left: 3rem;
     background-repeat: no-repeat;
     background-position: left top;
+    line-height: 2.52rem;
 }
 
 .footer2{
