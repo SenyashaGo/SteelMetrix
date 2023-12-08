@@ -1,16 +1,25 @@
 /* Default */
 
+:root{
+    font-size: 62.5%;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+a{
+    outline: none;
+}
+a:link { color: white; }
+a:visited { color: wheat; }
 
 .visually-hidden {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+    width: 0.1rem;
+    height: 0.1rem;
+    margin: -0.1rem;
     padding: 0;
     overflow: hidden;
     border: 0;
@@ -24,11 +33,28 @@ ul {
 }
 
 .container { 
-    padding-left: 302px;
-    padding-right: 302px;
+    padding-left: 30.2rem;
+    padding-right: 30.2rem;
 }
 
+
 /* Header */
+
+
+.header{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+
+.header_number{
+    color: #EB6329;
+    margin-left: 7rem;
+}
+
+.header-nav{
+    margin-left: auto;
+}
 
 .list_item:hover {
     color: #EB6329;
@@ -40,22 +66,23 @@ ul {
 }
 
 .list_item:not(:first-child) {
-    margin-left: 20px;
+    margin-left: 2rem;
 }
 
 .list_item:not(:last-child) {
-    padding-right: 20px;
-    border-right: 2px #D9D9D9 solid;
+    padding-right: 2rem;
+    border-right: 0.2rem #D9D9D9 solid;
 }
 
 .header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    height: 50px;
-    padding-top: 14px;
-    margin-bottom: 14px;
+    /*justify-content: space-between;*/
+    height: 5rem;
+    padding-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    font-size: 1.8rem;
 }
 
 
@@ -65,28 +92,35 @@ ul {
 .hero {
     color: white;
     max-width: 100%;
-    height: 820px;
+    height: 82rem;
     background-image: url("../img/hero_img.png");
-    padding-top: 150px;
+    padding-top: 15rem;
 }
 
 .hero_text {
-    padding-left: 10px;
-    font-size: 40px;
-    border-left: 5px #EB6329 solid;
-    max-width: 623px;
+    padding-left: 1rem;
+    font-size: 4rem;
+    border-left: 0.5rem #EB6329 solid;
+    max-width: 62.3rem;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
 }
+
+
 
 /* Industry */
 
 .industry_heading {
     color: #464646;
-    font-size: 28px;
+    font-size: 2.8rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
 }
 
 .industry_filter {
-    padding-bottom: 80px;
-    padding-top: 80px;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
     background-color: #F0F0F0;
 }
 
@@ -94,19 +128,22 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 1300px;
+    max-width: 130rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
 }
 
 
 .industry_filter_item {
-    margin-top: 20px;
-    margin-left: 20px;
+    font-size: 2.2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
 }
 
 .industry_filter_item>button {
-    padding: 15px 20px;
+    padding: 1.5rem 2rem;
     background-color: transparent;
-    border: 2px #464646 solid;
+    border: 0.2rem #464646 solid;
 }
 
 .industry_filter_item:first-child>button {
@@ -122,22 +159,37 @@ ul {
 .industry_filter_all { 
     display: flex;
     justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
 }
 
 .industry_filter_all-btn{
     width: max-content;
     background-color: transparent;
-    margin-top: 40px;
+    margin-top: 4rem;
     border: 0;
-    padding-right: 30px;
+    padding-right: 3rem;
     background-image: url("../img/arrow.png");
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 25px 12px;
+    background-size: 2.5rem 1.2rem;
+    font-size: 2rem;
+}
+
+.industry_card>h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 2.8rem;
+}
+
+.industry_card>p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 2.2rem;
 }
 
 .industry_cards{
-    margin-top: 100px;
+    margin-top: 10rem;
     color: #464646;
     background: white;
     display: flex;
@@ -148,44 +200,46 @@ ul {
 
 .industry_card {
     max-width: min-content;
-    height: 400px;
-    margin-left: 20px;
+    height: 40rem;
+    margin-left: 2rem;
+    /*margin-top: 4rem;*/
 }
 .industry_card:nth-child(3n+1) { 
     margin: 0;
 }
 
 .industry_card>h3 { 
-    font-size: 28px;
+    font-size: 2.8rem;
 }
 
 .industry_card>p { 
-    font-size: 22px;
+    font-size: 2.2rem;
 }
 
 .industry_card>img { 
-   width: 412px;
-   height: 260px;
+   width: 41.2rem;
+   height: 26rem;
 }
 
 .industry_cards_all{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 40px;
+    padding-top: 4rem;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 10rem;
 
 }
 
 .industry_cards_all-btn{
     border: 0;
-    padding-right: 30px;
+    padding-right: 3rem;
     background-color: transparent;
     background-image: url("../img/arrow.png");
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 25px 12px;
+    background-size: 2.5rem 1.2rem;
+    font-size: 2rem;
 }
 
 /* Tagline */
@@ -228,13 +282,83 @@ ul {
 }
 
 /* Forms */
-.form{
+/*.form{*/
+/*    background: #464646;*/
+/*    color: white;*/
+/*}*/
+
+/*.form_text{*/
+/*    max-width: 638px;*/
+/*    padding-top: 150px;*/
+/*    padding-left: 302px;*/
+/*}*/
+
+
+/* Forms */
+.form {
     background: #464646;
     color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    height: 1139px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .form_text{
     max-width: 638px;
-    padding-top: 150px;
-    padding-left: 302px;
+
+}
+
+.form_text>p{
+    margin-top: 10px;
+}
+
+.form>form {
+    color: #D8D8D8;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 839px;
+    width: 638px;
+    padding: 15px 60px;
+    margin-left: 40px;
+}
+
+.form>form>div>input,
+.form>form>div>textarea {
+    max-width: 600px;
+    width: 100%;
+    padding: 14px 15px;
+}
+
+#comment {
+    height: 130px;
+}
+
+.form>form>div {
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.user_agreement {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    color: black;
+    text-wrap: none;
+
+}
+.user_agreement>input{
+    width: 10%;
+}
+
+.submit-btn{
+
+    padding: 18px 28px;
+    gap: 10px;
+    max-width: 256px;
 }

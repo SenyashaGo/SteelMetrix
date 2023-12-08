@@ -5,6 +5,14 @@
     <title>SteelMetrixx</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+
+    <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">-->
+
 </head>
 <body>
   <header class="header container">
@@ -12,7 +20,7 @@
       <nav class="header-nav nav">
           <ul class="nav_list">
               <li class="list_item">Главная</li>
-              <li class="list_item">Компетенции</li>
+              <li class="list_item with_arrow">Компетенции &#8744;</li>
               <li class="list_item">О компании</li>
               <li class="list_item">Контакты</li>
           </ul>
@@ -136,55 +144,110 @@
               </div>
           </div>
       </section>
-      <section class="form">
+      <section class="form container">
           <div class="form_text">
               <h2>Поможем реализовать
                   ваш проект</h2>
-              <p>Заполните форму и мы свяжемся с вами в течение рабочего дня.
-                  Наши технологи и проектировщики
+              <p>Заполните форму и мы свяжемся с вами в течение рабочего дня.</p>
+                  <p>Наши технологи и проектировщики
                   изучат ваши требования, предложат
                   варианты технических решений и обоснуют их возможности и ограничения
-                  для принятия оптимального решения.
-                  Вы всегда можете получить бесплатную консультацию по телефону <a href="">8 800 302-74-79</a>, по почте <a href="">info@stelmetrixx.ru</a> или в
+                  для принятия оптимального решения.</p>
+                  <p>Вы всегда можете получить бесплатную консультацию по телефону <a href="">8 800 302-74-79</a>, по почте <a href="">info@stelmetrixx.ru</a> или в
                   <a href="">WhatsApp</a> и <a href="">Telegram</a>.</p>
           </div>
           <form>
               <div>
                   <label for="name"></label>
-                  <input type="text" name="name" id="name" placeholder="Ваше имя*" required>
+                  <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          placeholder="Ваше имя*"
+                          required
+                  />
               </div>
               <div>
                   <label for="e-mail"></label>
-                  <input type="text" name="e-mail" id="e-mail" placeholder="E-mail*" required>
+                  <input
+                          type="text"
+                          name="e-mail"
+                          id="e-mail"
+                          placeholder="E-mail*"
+                          required
+                  />
               </div>
               <div>
                   <label for="phone"></label>
-                  <input type="text" name="phone" id="phone" placeholder="Телефон" required>
+                  <input
+                          type="text"
+                          name="phone"
+                          id="phone"
+                          placeholder="Телефон"
+                          required
+                  />
               </div>
               <div>
                   <label for="reg"></label>
-                  <input type="text" name="reg" id="reg" placeholder="Регион" required>
+                  <input
+                          type="text"
+                          name="reg"
+                          id="reg"
+                          placeholder="Регион"
+                          required
+                  />
               </div>
               <div>
                   <label for="city"></label>
-                  <input type="text" name="city" id="city" placeholder="Город(населенный пункт)*" required>
+                  <input
+                          type="text"
+                          name="city"
+                          id="city"
+                          placeholder="Город(населенный пункт)*"
+                          required
+                  />
               </div>
               <div>
                   <label for="otr"></label>
-                  <input type="text" name="otr" id="otr" placeholder="Отрасль*"> <select name="otr" required>
-                  <option value="">1</option>
-                  <option value="2">2</option>
-                  <option value="3" selected>3</option>
-              </select>
+                  <input
+                          type="text"
+                          name="otr"
+                          id="otr"
+                          list="otr-list"
+                          placeholder="Отрасль*"
+                          required
+                  />
+                  <datalist id="otr-list">
+                      <option value="инвалид"></option>
+                      <option value="шизоид"></option>
+                      <option value="додик"></option>
+                      <option value="wildberries"></option>
+                  </datalist>
               </div>
               <div>
                   <label for="comment"></label>
-                  <input type="text" name="comment" id="comment" placeholder="Комментарий" required>
+                  <textarea
+                          type="text"
+                          name="comment"
+                          id="comment"
+                          placeholder="Комментарий"
+                          required
+                  ></textarea>
               </div>
-              <input type="checkbox" name="terms"><a>Соглашаюсь</a> на обработку персональных данных в соответсвии <a> с политикой конфиденциальности </a>
-              <button type="submit">Оформить заявку</button>
+              <div class="user_agreement">
+                  <input type="checkbox" name="terms" />
+                  <span>
+                      <a>Соглашаюсь</a> на обработку
+                  персональных данных в соответсвии
+                  <a> с политикой конфиденциальности </a>
+                  </span>
+              </div>
+              <button type="submit" class="submit-btn">Отправить заявку</button>
           </form>
       </section>
   </main>
+  <footer>
+
+  </footer>
 </body>
 </html>
