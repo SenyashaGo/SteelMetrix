@@ -2,6 +2,12 @@
 
 :root{
     font-size: 62.5%;
+    --text-color1: white;
+    --text-color2: #EB6329;
+    --text-color3: wheat;
+    --text-color4: #464646;
+    --text-color5: black;
+    --text-color6: #D8D8D8;
 }
 
 * {
@@ -12,8 +18,12 @@
 a{
     outline: none;
 }
-a:link { color: white; }
-a:visited { color: wheat; }
+a:link { color: var(--text-color1); }
+a:visited { color: var(--text-color3); }
+
+.link-no-underline {
+    text-decoration: none;
+}
 
 .visually-hidden {
     position: absolute;
@@ -48,7 +58,7 @@ ul {
 
 
 .header_number{
-    color: #EB6329;
+    color: var(--text-color2);
     margin-left: 7rem;
 }
 
@@ -57,12 +67,12 @@ ul {
 }
 
 .list_item:hover {
-    color: #EB6329;
+    color: var(--text-color2);
 }
 
 .list_item:first-child,
 .header-number {
-    color: #EB6329
+    color: var(--text-color2)
 }
 
 .list_item:not(:first-child) {
@@ -90,7 +100,7 @@ ul {
 
 
 .hero {
-    color: white;
+    color: var(--text-color1);
     max-width: 100%;
     height: 82rem;
     background-image: url("../img/hero_img.png");
@@ -100,7 +110,7 @@ ul {
 .hero_text {
     padding-left: 1rem;
     font-size: 4rem;
-    border-left: 0.5rem #EB6329 solid;
+    border-left: 0.5rem var(--text-color2) solid;
     max-width: 62.3rem;
     text-transform: uppercase;
     font-family: 'Inter', sans-serif;
@@ -112,7 +122,7 @@ ul {
 /* Industry */
 
 .industry_heading {
-    color: #464646;
+    color: var(--text-color4);
     font-size: 2.8rem;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -143,17 +153,17 @@ ul {
 .industry_filter_item>button {
     padding: 1.5rem 2rem;
     background-color: transparent;
-    border: 0.2rem #464646 solid;
+    border: 0.2rem var(--text-color4) solid;
 }
 
 .industry_filter_item:first-child>button {
-    color: white;
-    background-color: #464646;
+    color: var(--text-color1);
+    background-color: var(--text-color4);
 }
 
 .industry_filter_item>button:hover {
-    color: white;
-    background-color: #464646;
+    color: var(--text-color1);
+    background-color: var(--text-color4);
 }
 
 .industry_filter_all { 
@@ -193,8 +203,8 @@ ul {
 
 .industry_cards{
     margin-top: 10rem;
-    color: #464646;
-    background: white;
+    color: var(--text-color4);
+    background: var(--text-color1);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -259,7 +269,7 @@ ul {
 }
 
 .tagline_text{
-    color: #EB6329;
+    color: var(--text-color2);
     font-size: 3.4rem;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -268,11 +278,11 @@ ul {
 /* Partners */
 
 .partners{
-    background: white;
+    background: var(--text-color1);
 }
 
 .partners_tagline{
-    color: #EB6329;
+    color: var(--text-color2);
     font-size: 3.4rem;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -301,8 +311,8 @@ ul {
 
 /* Forms */
 /*.form{*/
-/*    background: #464646;*/
-/*    color: white;*/
+/*    background: var(--text-color4);*/
+/*    color: var(--text-color1);*/
 /*}*/
 
 /*.form_text{*/
@@ -314,8 +324,8 @@ ul {
 
 /* Forms */
 .form {
-    background: #464646;
-    color: white;
+    background: var(--text-color4);
+    color: var(--text-color1);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -348,8 +358,8 @@ ul {
 }
 
 .form>form {
-    color: #D8D8D8;
-    background-color: white;
+    color: var(--text-color6);
+    background-color: var(--text-color1);
     display: flex;
     flex-direction: column;
     height: 83.9rem;
@@ -381,7 +391,7 @@ ul {
     flex-direction: row;
     justify-content: start;
     align-items: flex-start;
-    color: black;
+    color: var(--text-color5);
     text-wrap: none;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
@@ -398,8 +408,8 @@ ul {
     max-width: 25.6rem;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    background-color: black;
-    color: white;
+    background-color: var(--text-color5);
+    color: var(--text-color1);
     border: none;
     font-size: 2rem;
 }
@@ -412,7 +422,7 @@ ul {
 
 /* FOOTER */
 footer{
-    background-color: black;
+    background-color: var(--text-color5);
 }
 
 .footer1{
@@ -487,7 +497,7 @@ footer{
 
 
 .combo3-1{
-    color: white;
+    color: var(--text-color1);
     display: flex;
     flex-direction: column;
     max-width: 26.8rem;
@@ -501,7 +511,7 @@ footer{
 }
 
 .combo3-2{
-    color: white;
+    color: var(--text-color1);
     display: flex;
     flex-direction: column;
     max-width: 29.5rem;
@@ -546,7 +556,7 @@ footer{
     padding-top: 7.5rem;
     padding-left: 30.2rem;
     font-size: 1.6rem;
-    color: white;
+    color: var(--text-color1);
     padding-bottom: 5rem;
 }
 
