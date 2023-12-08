@@ -440,6 +440,9 @@ ul {
 
 }
 
+.user_agreement>span>a{
+    color: var(--text-color2);
+}
 
 
 /* FOOTER */
