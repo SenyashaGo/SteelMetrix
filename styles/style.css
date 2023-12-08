@@ -383,6 +383,9 @@ ul {
     align-items: flex-start;
     color: black;
     text-wrap: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
 
 }
 .user_agreement>input{
@@ -390,10 +393,168 @@ ul {
 }
 
 .submit-btn{
-
     padding: 1.8rem 2.8rem;
     gap: 1rem;
     max-width: 25.6rem;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 2rem;
+}
+
+.form_item{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+/* FOOTER */
+footer{
+    background-color: black;
+}
+
+.footer1{
+    display: flex;
+    flex-direction: row;
+}
+
+.steel_footer{
+    padding-top: 5rem;
+    padding-left: 30.2rem;
+}
+
+.social_footer{
+    padding-top: 3.9rem;
+    padding-left: 30.2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 11.9rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.social_footer_item1{
+    background-image: url("../img/footer/Telegram icon.png");
+    padding-left: 3rem;
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 1.8rem;
+}
+
+.social_footer_item2{
+    margin-top: 2rem;
+    background-image: url("../img/footer/Whatsapp icon.png");
+    padding-left: 3rem;
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 1.8rem;
+}
+
+.social_footer_item3{
+    margin-top: 2rem;
+    background-image: url("../img/footer/Youtube icon.png");
+    padding-left: 3rem;
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 1.8rem;
+}
+
+.disk_footer{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    padding-top: 5rem;
+    padding-left: 30.4rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+
+}
+
+.disk_footer_item:not(:first-child){
+    margin-top: 2rem;
+}
+
+.combo3{
+    padding-top: 5rem;
+    padding-left: 19rem;
+}
+
+.combo3-1 {
+    margin-bottom: 3.5rem;
+}
+
+
+.combo3-1{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 26.8rem;
+}
+
+.combo3-1_item>a{
+    font-size: 2.8rem;
+}
+.combo3-1_item>p{
+    font-size: 1.8rem;
+}
+
+.combo3-2{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 29.5rem;
+    font-size: 1.8rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.combo3-1_item:not(:first-child){
+    margin-top: 1rem;
+}
+
+.combo3-1_item:first-child{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.combo3-1_item:last-child{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.combo3-2_item:not(:first-child){
+    margin-top: 2rem;
+}
+
+.combo3-2_item:first-child{
+    background-image: url("../img/footer/mail icon.png");
+    padding-left: 3rem;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.combo3-2_item:last-child{
+    background-image: url("../img/footer/location icon.png  ");
+    padding-left: 3rem;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.footer2{
+    padding-top: 7.5rem;
+    padding-left: 30.2rem;
+    font-size: 1.6rem;
+    color: white;
+    padding-bottom: 5rem;
+}
+
+.last_footer_item:first-child{
+    margin-right: 65.9rem;
+}
+
+.last_footer{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
 }
