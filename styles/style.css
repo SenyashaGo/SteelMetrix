@@ -50,9 +50,13 @@ ul {
 }
 
 .container { 
-    padding-left: 30.2rem;
-    padding-right: 30.2rem;
+    padding-left: 12vw;
+    padding-right: 12vw;
 }
+
+/*.container2{*/
+/*    padding-left: 30.2rem;*/
+/*}*/
 
 
 /* Header */
@@ -63,14 +67,23 @@ ul {
     font-weight: 500;
 }
 
+.burger{
+    background-image: url("../img/HamburgerMenu.png") ;
+    width: 27px;
+    height: 16px;
+    margin-left: 5rem;
+    display: none;
+}
 
 .header_number{
     color: var(--text-color2);
     margin-left: 7rem;
+
 }
 
 .header-nav{
     margin-left: auto;
+
 }
 
 .list_item:hover {
@@ -95,11 +108,12 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /*justify-content: space-between;*/
+    /*justify-content: center;*/
     height: 5rem;
     padding-top: 1.4rem;
     margin-bottom: 1.4rem;
     font-size: 1.8rem;
+
 }
 
 
@@ -112,6 +126,7 @@ ul {
     height: 82rem;
     background-image: url("../img/hero_img.png");
     padding-top: 15rem;
+    margin: 0 auto;
 }
 
 .hero_text {
@@ -221,7 +236,9 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    /*margin: 0 auto;*/
 }
 
 .industry_card {
@@ -277,6 +294,7 @@ ul {
     background-color: #F0F0F0;
     justify-content: center;
     height: 34.4rem;
+
 }
 
 .tagline_text{
@@ -284,12 +302,15 @@ ul {
     font-size: 3.4rem;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
+    text-align: center;
 }
 
 /* Partners */
 
 .partners{
     background: var(--text-color1);
+    display: flex;
+    flex-direction: column;
 }
 
 .partners_tagline{
@@ -310,8 +331,15 @@ ul {
 .partners_text{
     max-width: 110.6rem;
     padding-top: 15rem;
-    padding-left: 30.2rem;
+    /*padding-left: 30.2rem;*/
+    /*margin-left: auto;*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap;*/
+    /*align-items: center;*/
 }
+
+
 
 .partners_cards{
     padding-top: 4rem;
@@ -320,7 +348,8 @@ ul {
     flex-wrap: wrap;
     align-items: center;
     padding-bottom: 15rem;
-    justify-content: space-between;
+    justify-content: center;
+    max-width: calc(131.4rem + 50rem);
 }
 
 /* Forms */
@@ -342,9 +371,10 @@ ul {
     color: var(--text-color1);
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: start;
-    height: 113.9rem;
+    /*height: 113.9rem;*/
     padding-top: 15rem;
     padding-bottom: 15rem;
 }
@@ -377,12 +407,14 @@ ul {
     background-color: var(--text-color1);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 83.9rem;
     width: 63.8rem;
     padding: 1.5rem 6rem;
     margin-left: 4rem;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
+
 }
 
 
@@ -446,23 +478,36 @@ ul {
 
 
 /* FOOTER */
+
+.disk2{
+    display: none;
+}
 footer{
     background-color: var(--text-color5);
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
 }
 
 .footer1{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .steel_footer{
     padding-top: 5rem;
-    padding-left: 30.2rem;
+    /*padding-left: 30.2rem;*/
 }
 
 .social_footer{
     padding-top: 3.9rem;
-    padding-left: 30.2rem;
+    /*padding-left: 30.2rem;*/
     display: flex;
     flex-direction: column;
     max-width: 11.9rem;
@@ -581,21 +626,91 @@ footer{
 
 .footer2{
     padding-top: 7.5rem;
-    padding-left: 30.2rem;
     font-size: 1.6rem;
     color: var(--text-color1);
     padding-bottom: 5rem;
 }
 
-.last_footer_item:first-child{
-    margin-right: 65.9rem;
-}
 
 .last_footer{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    /*padding-right: ;*/
 }
 
 .combo3-1_item>a{
     color: var(--text-color2);
+}
+
+
+/* MEDIA */
+
+@media (max-width: 83.4rem) {
+    .form>form {
+        margin-top: 5rem;
+        margin-left: 0;
+    }
+    .footer1{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 0;
+        margin-right: 12.2rem;
+
+    }
+    .disk_footer{
+        display: none;
+    }
+    .combo3{
+        padding-left: 0rem;
+    }
+    .container{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .last_footer_item:first-child{
+        max-width: 24.7rem;
+    }
+
+    .partners_cards{
+        justify-content: space-between;
+    }
+    .tagline_text{
+        max-width: 72rem;
+        text-align: center;
+    }
+    .industry_filter_item:nth-child(n+9){
+        display: none;
+    }
+    .header-nav{
+        display: none;
+    }
+    .header_number{
+        margin-left: 32.8rem;
+    }
+    .burger{
+        display: block;
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .disk2{
+        display: block;
+        border-top: 1px solid var(--text-color4);
+        padding-top: 5rem;
+        margin-top: 5rem;
+    }
+    .disk_footer2{
+        display: flex;
+        flex-direction: row;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+        justify-content: space-between;
+    }
+    .disk_footer_item2{
+        align-items: center;
+    }
 }
