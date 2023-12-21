@@ -210,16 +210,16 @@ ul {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
 }
-/* Apply styles to even elements in the industry filter list */
+
 .industry_filter_list li:nth-child(even) {
-    /* Add your styles for even elements here */
-    background-color: var(--text-color2) /* Example background color for even elements */
+
+    background-color: var(--text-color2)
 }
 
-/* Apply styles to odd elements in the industry filter list */
+
 .industry_filter_list li:nth-child(odd) {
-    /* Add your styles for odd elements here */
-    background-color: #1da18d; /* Example background color for odd elements */
+
+    background-color: #1da18d;
 }
 
 

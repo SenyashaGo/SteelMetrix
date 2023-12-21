@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(function () {
         loader.style.animationPlayState = 'paused';
-        loader.style.display = 'none'; // Hide the loader
-        cardContent.style.visibility = 'visible'; // Display the card content
-    }, 3000); // Adjust the delay in milliseconds
+        loader.style.display = 'none';
+        cardContent.style.visibility = 'visible';
+    }, 3000);
 });
