@@ -1,87 +1,400 @@
-/* styles.css */
+:root {
+    font-size: 62.5%;
+}
 
-body {
+* {
+    padding: 0;
     margin: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-rows: auto 1fr auto; /* Определение строк */
-    min-height: 100vh; /* Минимальная высота экрана */
+a:hover,
+a:focus {
+    color: #207cca; /* Цвет ссылок при наведении и фокусе */
 }
 
-header, footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-main.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 3fr; /* Определение столбцов */
-    gap: 20px; /* Расстояние между элементами сетки */
-    padding: 20px;
-}
-
-.dashboard {
-    display: grid;
-    grid-template-columns: 1fr; /* Одна колонка для боковой панели */
-    grid-template-areas:
-    "sidePanel"
-    "chart1"
-    "chart2 chart3 chart4"
-    "chart5 chart6";
-
-    gap: 10px;
-}
-
-.side-panel {
-    grid-area: sidePanel;
-}
-
-.chart-container {
-    grid-area: chart1;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr); /* Три ряда для графиков */
-    gap: 10px;
-}
-
-.chart {
-    background-color: #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
-.image-gallery {
-    grid-area: chart2;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Галерея изображений с автоматической шириной колонок */
-    gap: 10px;
-}
-
-.gallery-item {
-    position: relative;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.image-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #333;
-    color: #fff;
-    padding: 5px 10px;
+a:link { color: #000000; }
+a:visited { color: orange; }
+.link-no-underline {
     text-decoration: none;
 }
 
-footer {
-    /* Стили футера */
+.visually-hidden {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    margin: -0.1rem;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.container {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.header{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+
+.header_number{
+    color: orange;
+    margin-left: 7rem;
+
+}
+
+.header-nav{
+    margin-left: auto;
+
+}
+
+.list_item:hover {
+    color: orange;
+}
+
+.list_item:first-child,
+.header-number {
+    color:orange;
+}
+
+.list_item>a:hover{
+    color: orange;
+}
+.list_item>a{
+    color: black;
+}
+.inside_img>a{
+    color: white;
+    text-decoration: none;
+}
+.list_item:not(:first-child) {
+    margin-left: 2rem;
+}
+
+.list_item:not(:last-child) {
+    padding-right: 2rem;
+    border-right: 0.2rem #D9D9D9 solid;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*justify-content: center;*/
+    height: 5rem;
+    padding-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    font-size: 1.8rem;
+
+}
+
+.container2{
+    padding-right: 70rem;
+    padding-left: 70rem;
+
+}
+
+/*GRID*/
+
+h1{
+    display: none;
+}
+
+.wrapper {
+    /*max-width: 1170px;*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 100px;
+}
+
+.dashboard{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.side_panel{
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.side_panel a{
+    font-size: 2rem;
+}
+
+.charts{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+
+}
+
+.first_row{
+    display: grid;
+    grid-column: span 6;
+}
+
+.second_row{
+    display: grid;
+    grid-column: span 2;
+}
+
+.third_row{
+    display: grid;
+    grid-column-start: span 3;
+}
+
+.graffic{
+    margin-top: 2rem;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.graffic img{
+    grid-column: 1 span;
+    max-width: 100%;
+    grid-column: -1/1;
+    grid-row-start: 1;
+}
+
+.gallery{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.gallery h2{
+    font-size: 5rem;
+}
+
+.reference{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    grid-column: -1/1;
+    grid-row-start: 1;
+    cursor: pointer;
+    background-color: #bb2020;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.inside_img{
+    display: grid;
+    grid-column: 2 span;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.inside_img>img{
+    height: 500px;
+    width: 500px;
+}
+
+/*FOOTER*/
+
+.disk2{
+    display: none;
+}
+.combo1_hide{
+    display: none;
+}
+footer{
+    background-color: black;
+    background-size: 100%;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*.steel_footer{*/
+/*    padding-top: 5rem;*/
+/*    transform: rotate(30deg) scale(1.5) skewX(20deg) skewY(10deg);*/
+/*    !*padding-left: 30.2rem;*!*/
+/*}*/
+
+.social_footer{
+    padding-top: 3.9rem;
+    /*padding-left: 30.2rem;*/
+    display: flex;
+    flex-direction: column;
+    max-width: 11.9rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.social_footer_item1{
+    background-image: url("../../img/footer/Telegram icon.png");
+    padding-left: 3rem;
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 1.8rem;
+}
+
+.social_footer_item2{
+    margin-top: 2rem;
+    background-image: url("../../img/footer/Whatsapp icon.png");
+    padding-left: 3rem;
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 1.8rem;
+}
+
+.social_footer_item3{
+    margin-top: 2rem;
+    background-image: url("../../img/footer/Youtube icon.png");
+    padding-left: 3rem;
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 1.8rem;
+}
+.social_footer_item1_hide{
+    background-image: url("../../img/footer/Telegram icon.png");
+    padding-left: 3rem;
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 1.5rem;
+}
+
+.social_footer_item2_hide{
+    margin-top: 2rem;
+    background-image: url("../../img/footer/Whatsapp icon.png");
+    padding-left: 3rem;
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 1.5rem;
+}
+
+.social_footer_item3_hide{
+    margin-top: 2rem;
+    background-image: url("../../img/footer/Youtube icon.png");
+    padding-left: 3rem;
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 1.5rem;
+}
+.disk_footer{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    padding-top: 5rem;
+    padding-left: 30.4rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+
+}
+
+.disk_footer_item:not(:first-child){
+    margin-top: 2rem;
+}
+
+.combo3{
+    padding-top: 5rem;
+    padding-left: 19rem;
+}
+
+.combo3-1 {
+    margin-bottom: 3.5rem;
+}
+
+
+.combo3-1{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 26.8rem;
+}
+
+.combo3-1_item>a{
+    font-size: 2.8rem;
+}
+.combo3-1_item>p{
+    font-size: 1.8rem;
+}
+
+.combo3-2{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 29.5rem;
+    font-size: 1.8rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.combo3-1_item:not(:first-child){
+    margin-top: 1rem;
+}
+
+.combo3-1_item:first-child{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.combo3-1_item:last-child{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.combo3-2_item:not(:first-child){
+    margin-top: 2rem;
+}
+
+
+.combo3-2_item:first-child{
+    background-image: url("../../img/footer/mail icon.png");
+    padding-left: 3rem;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.combo3-2_item:last-child{
+    background-image: url("../../img/footer/location icon.png");
+    padding-left: 3rem;
+    background-repeat: no-repeat;
+    background-position: left top;
+    line-height: 2.52rem;
+}
+
+.footer2{
+    padding-top: 7.5rem;
+    font-size: 1.6rem;
+    color: white;
+    padding-bottom: 5rem;
+}
+
+
+.last_footer{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    /*padding-right: ;*/
+}
+
+.combo3-1_item>a{
+    color: orange;
 }

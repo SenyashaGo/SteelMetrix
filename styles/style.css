@@ -549,7 +549,11 @@ textarea::placeholder {
     margin-right: 1rem;
 
 }
-
+label{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
 .submit-btn{
     padding: 1.8rem 2.8rem;
     gap: 1rem;
