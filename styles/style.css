@@ -15,9 +15,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-a{
-    outline: none;
+a:hover,
+a:focus {
+    color: #207cca; /* Цвет ссылок при наведении и фокусе */
 }
+
 a:link { color: var(--text-color1); }
 a:visited { color: var(--text-color3); }
 
@@ -127,6 +129,8 @@ ul {
     background-image: url("../img/hero_img.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    /*background: no-repeat center/100% url("../img/hero_img.png");*/
     padding-top: 15rem;
     margin: 0 auto;
 }
@@ -147,9 +151,43 @@ ul {
 
 }
 
-
-
+.hero_text::selection {
+    background-color: #ffcc00; /* Цвет фона при выделении */
+    color: #333; /* Цвет текста при выделении */
+}
 /* Industry */
+
+/* Add this to your existing CSS */
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1.5s linear infinite, fadeIn 1s ease-out;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 1; visibility: visible; }
+    100% { opacity: 0; visibility: hidden; }
+}
+
+.last-card .card-content {
+    visibility: hidden;
+    animation: fadeOut 1s ease-in 1.5s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 
 .industry_heading {
     color: var(--text-color4);
@@ -172,6 +210,17 @@ ul {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
 }
+/* Apply styles to even elements in the industry filter list */
+.industry_filter_list li:nth-child(even) {
+    /* Add your styles for even elements here */
+    background-color: var(--text-color2) /* Example background color for even elements */
+}
+
+/* Apply styles to odd elements in the industry filter list */
+.industry_filter_list li:nth-child(odd) {
+    /* Add your styles for odd elements here */
+    background-color: #1da18d; /* Example background color for odd elements */
+}
 
 
 .industry_filter_item {
@@ -191,7 +240,7 @@ ul {
     background-color: var(--text-color4);
 }
 
-.industry_filter_item>button:hover {
+.industry_filter_item>button:hover{
     color: var(--text-color1);
     background-color: var(--text-color4);
 }
@@ -232,6 +281,7 @@ ul {
 }
 
 .industry_cards{
+
     margin-top: 10rem;
     color: var(--text-color4);
     background: var(--text-color1);
@@ -240,7 +290,7 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /*margin: 0 auto;*/
+
 }
 
 .industry_card {
@@ -371,6 +421,24 @@ ul {
 
 
 /* Forms */
+
+input::placeholder,
+textarea::placeholder {
+    color: #f30606; /* Цвет подсказок */
+}
+.submit-btn:hover {
+    /*background-color: #207cca; !* Цвет фона кнопки при наведении *!*/
+    background-color: #207cca;
+    color: var(--text-color2);
+    transform: scale(1.1) rotate(5deg); /* Масштабирование и поворот при наведении */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Тень */
+}
+
+.submit-btn:active {
+    transform: scale(0.9) rotate(-5deg); /* Масштабирование и поворот при нажатии */
+    box-shadow: none; /* Убираем тень при нажатии */
+}
+
 .form {
     background: var(--text-color4);
     color: var(--text-color1);
@@ -510,6 +578,7 @@ footer{
 
 .steel_footer{
     padding-top: 5rem;
+    transform: rotate(30deg) scale(1.5) skewX(20deg) skewY(10deg);
     /*padding-left: 30.2rem;*/
 }
 
@@ -684,6 +753,9 @@ footer{
         margin-top: 5rem;
         margin-left: 0;
     }
+    /*.hero{*/
+    /*    background-size: contain;*/
+    /*}*/
     .footer1{
         flex-direction: row;
         justify-content: space-between;
