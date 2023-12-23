@@ -92,6 +92,7 @@ ul {
 .header_number{
     color: var(--text-color2);
     margin-left: 7rem;
+    opacity: 2;
 
 }
 
@@ -374,6 +375,7 @@ ul {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     text-align: center;
+    opacity: 2;
 }
 
 /* Partners */
@@ -570,6 +572,7 @@ label{
 
 .user_agreement>span>a{
     color: var(--text-color2);
+    opacity: 2;
 }
 
 
