@@ -3,7 +3,7 @@
 :root{
     font-size: 62.5%;
     --text-color1: white;
-    --text-color2: #EB6329;
+    --text-color2: #ff0000;
     --text-color3: wheat;
     --text-color4: #464646;
     --text-color5: black;
@@ -263,6 +263,12 @@ ul {
     padding: 1.5rem 2rem;
     background-color: transparent;
     border: 0.2rem var(--text-color4) solid;
+
+}
+
+.industry_filter_item>button:focus {
+
+    font-weight: bold;
 }
 
 .industry_filter_item:first-child>button {
