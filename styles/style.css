@@ -9,7 +9,17 @@
     --text-color5: black;
     --text-color6: #D8D8D8;
 }
-
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
 .skip-link {
     display: block;
     position: absolute;
@@ -532,8 +542,9 @@ textarea::placeholder {
     font-weight: 500;
     font-size: 1.6rem;
     max-width: 60rem;
-
 }
+
+
 
 .user_agreement {
     display: flex;
@@ -551,11 +562,11 @@ textarea::placeholder {
     margin-right: 1rem;
 
 }
-label{
-    visibility: hidden;
-    opacity: 0;
-    display: none;
-}
+/*label{*/
+/*    visibility: hidden;*/
+/*    opacity: 0;*/
+/*    display: none;*/
+/*}*/
 .submit-btn{
     padding: 1.8rem 2.8rem;
     gap: 1rem;
